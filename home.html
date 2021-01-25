@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Terminator</title>
+</head>
+
+<body>
+    <header class="showcase">
+        <div class="video-container">
+            <video src="/images/showcase.mov" autoplay muted loop></video>
+        </div>
+        <div class="title">
+            <h1><span class="the">The</span> <span class="highlight">Terminator.</span></h1>
+        </div>
+    </header>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <nav class="dropdown-content">
+            <a href="#interior-section">Interior</a>
+            <a href="#exterior-section">Exterior</a>
+            <a href="#powertrain-section">Powertrain</a>
+            <!-- <a href="#gallery-section">Gallery</a> -->
+        </nav>
+    </div>
+
+    <main class="container">
+        <section class="card" data-aos="fade-left">
+            <img src="/images/interior.jpg">
+            <div>
+                <h2 id="interior-section">Interior</h2>
+                <ul>
+                    <li>Mach 460 Radio</li>
+                    <li>Recaro Seats</li>
+                    <li>Boost Gauge</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card" data-aos="fade-right">
+            <img src="/images/exterior.jpg">
+            <div>
+                <h2 id="exterior-section">Exterior</h2>
+                <ul class="exterior-li">
+                    <li>17" x 9" Alloy Wheels</li>
+                    <li>Redesigned Front and Rear Bumper</li>
+                    <li>Chin and Ducktail Spoiler</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card" data-aos="fade-left">
+            <img src="/images/engine.jpg">
+            <div>
+                <h2 id="powertrain-section">Powertrain</h2>
+                <ul>
+                    <li>4.6L 4V Daul Overhead Cam Engine</li>
+                    <li>1.8L Eaton Supercharger</li>
+                    <li>6 Speed Manual Transmission</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- <section>
+            <h2 id="gallery-section">Gallery</h2>
+        </section> -->
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>
